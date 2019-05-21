@@ -21,7 +21,7 @@ Add `unmanage_interface` to your path in your .rc file
 export PATH=/path/to/unmanage_interface:$PATH
 ```
 
-or create a symlink to your bin directory
+or create a symlink in your bin directory
 
 ```
 cd /usr/local/bin
