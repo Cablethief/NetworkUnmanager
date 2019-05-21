@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 NETWORKMANAGER_CONF="/etc/NetworkManager/NetworkManager.conf"
 
 print_usage(){ 
@@ -66,9 +65,7 @@ networkmanager_add_unmanaged() {
         fi
     done
 
-
     UNMANAGED="${UNMANAGED} interface-name:${1}"
-
 
     UNMANAGED=$(echo $UNMANAGED | sed -e 's/^ //')
     UNMANAGED="${UNMANAGED// /;}"
@@ -119,8 +116,6 @@ networkmanager_rm_unmanaged() {
 
     return 0
 }
-
-
 
 if networkmanager_iface_is_unmanaged $interface; then
     echo "Un-unmanaging interface $interface"
